@@ -1,0 +1,30 @@
+ul.dropdown-menu {
+	display: none;
+	position: absolute;
+	left: -20%;
+	min-width: 140%;	
+	background-color:  #3A534F;
+	background-image:url('../media/tweed.png');
+	text-align: center;
+	z-index: 99;
+	border: 2px solid #858585;
+}
+
+li.dropdown {
+	position: relative;
+}
+
+ul.dropdown-menu > a {
+	text-align: center;
+}
+
+ul.dropdown-menu > li {
+	display: block;
+	border-bottom: 2px solid #858585;
+	border-right: none;
+	padding: .5em 0;
+}
+
+li.dropdown:hover ul.dropdown-menu{
+	display: block;;
+}

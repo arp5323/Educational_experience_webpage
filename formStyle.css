@@ -1,0 +1,10 @@
+.submitButton{
+    border: none;
+    text-align: center;
+    color: white;
+    /*display: inline-block;*/
+    background-color: #008CBA;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}

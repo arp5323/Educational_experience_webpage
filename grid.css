@@ -1,0 +1,130 @@
+/*
+12 Column layout
+HOW IT WORKS:
+Give something the width class, sizes it to that number of columns
+Put stuff in rows to clear around them (previous clearfix)
+12 columns is great because 2,3, and 4 column layouts work with it!
+(Sorry W3C I know we have similar code)
+*/
+
+
+/*
+So percentages really work
+(Didn't know this, explains some struggles I've had before)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+Widths
+*/
+
+.col-buff {
+    width: 5.5%;
+}
+
+.col-sm-1 {
+    width: 8.33%;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+}
+
+.col-sm-9 {
+    width: 75%;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+
+/*
+Float a column left
+*/
+
+[class*="col-"] {
+    float: left;
+    /*
+	Useful for debug
+	padding: 15px;
+    border: 1px solid black;
+	*/
+}
+
+
+/*
+A row clearfix
+*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.text-right {
+    float: right;
+}
+
+.permright {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        width: 100%;
+    }
+    .right {
+        float: none;
+    }
+    .left {
+        float: none;
+    }
+}
